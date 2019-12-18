@@ -1,30 +1,28 @@
+// go get all the cells
 let cells = document.querySelectorAll('.cell');
-let playerX = 'X';
-let playerO = 'O';
 
 
-
-
+// click on all the cells
 cells.forEach(function (cell) {
     cell.addEventListener("click", cellClicked);
 });
 
-
+// starting player is X, alternate
 let player = 2
 
 function cellClicked(e) {
 
-    if (player % 2 === 0 && e.target.textContent !== "X" && e.textContent !== "O") {
+    if (player % 2 === 0 && e.target.textContent == '') {
         e.target.textContent = 'X'
-
+        player++;
     } 
     
-    else {
+    else if (e.target.textContent == ''){
         e.target.textContent = 'O'
-
+        player++;
     }
 
-    player++;
+    
     console.log(player);
 };
 
