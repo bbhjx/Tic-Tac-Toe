@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <div id="board">
+  <div id="board" class="container">
     <h1>Tic Tac Toe</h1>
-    <h3 id="message">X starts the game!</h3>
+    <h3 id="message">X starts the match!</h3>
 
     <!--rows-->
 
@@ -35,15 +35,18 @@
     </div>
   </div>
 
-  <div id="scoreboard">
+  <div id="scoreboard" class="container">
     <h2>Score</h2>
-    <div>
-      1
+    <div class="row">
+
+      <div id="pxscore">
+        0
+      </div>
+      <div id="poscore">
+        0
+      </div>
     </div>
-    <div>
-      2
-    </div>
-    <button type="button" class="btn btn-outline-primary">Play Again</button>
+    <button type="button" class="btn btn-outline-primary">Play Again!</button>
   </div>
 
   <script src="app.js"></script>
