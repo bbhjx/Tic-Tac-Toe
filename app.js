@@ -12,7 +12,7 @@ cells.forEach(function (cell) {
 
 
 // starting player is X, alternate, and do not allow cells to be overwritten
-let player = 2
+let player = 2;
 
 function cellClicked(e) {
 
@@ -113,7 +113,7 @@ function buttonClicked(e) {
     cellContent[8].textContent = ""
 
     document.getElementById("message").innerHTML = "X starts the game!";
-    var player = 2;
+    player = 2;
     gameOver = false;
     console.log(player);
 
